@@ -1,0 +1,14 @@
+{
+  "name": "glob-test",
+  "version": "1.0.0",
+  "description": "test for https://github.com/actions/toolkit/issues/2085",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ICHINOSE Shogo",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/glob": "^0.6.1"
+  }
+}
