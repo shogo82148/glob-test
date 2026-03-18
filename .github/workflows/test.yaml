@@ -1,0 +1,17 @@
+name: "@actions/glob test"
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "24"
+      - run: npm ci
+      - run: node index.mjs
