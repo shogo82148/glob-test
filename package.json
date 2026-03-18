@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "test for https://github.com/actions/toolkit/issues/2085",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "bundle": "npx rollup --config rollup.config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ICHINOSE Shogo",
   "license": "MIT",
   "dependencies": {
     "@actions/glob": "^0.6.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.59.0"
   }
 }
